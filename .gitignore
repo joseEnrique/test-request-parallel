@@ -67,3 +67,4 @@ githubCredential.json
 
 #Netbeans project folder
 nbproject/
+package-lock.json
