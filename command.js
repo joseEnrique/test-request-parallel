@@ -3,6 +3,7 @@
 "use strict";
 const program = require('commander');
 const parallel_requests = require('./index.js')
+const pkg = require('./package.json');
 
 let bydirectory = (directory) => {
     parallel_requests.doParallelRequestFromfile(directory)
@@ -22,7 +23,7 @@ let infinite = (data) => {
 
 
 program
-    .version('1.1.0')
+    .version(pkg.version)
     .command('readFile')
     .description('read test from file')
     .option('-p, --path <directory>', 'put the filepath')
